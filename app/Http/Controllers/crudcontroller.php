@@ -29,7 +29,7 @@ class crudcontroller extends Controller
         $empleado->cedula= '23872064'; 
         $empleado->nombre='Diovilgy';      
         $empleado->apellido='Salazar';
-        $empleado->telefono='04249056309';
+        $empleado->telefono='04142563149';
         $empleado->email='diovilgy@hotmail.com';
         $empleado->save();
         return 'datos guardados';

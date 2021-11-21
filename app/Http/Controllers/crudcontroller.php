@@ -27,7 +27,7 @@ class crudcontroller extends Controller
     {
         $empleado= new Empleado;
         $empleado->cedula= '23872064'; 
-        $empleado->nombre='Diovilgy';      
+        $empleado->nombre='Nairobys';      
         $empleado->apellido='Salazar';
         $empleado->telefono='04142563149';
         $empleado->email='diovilgy@gmail.com';

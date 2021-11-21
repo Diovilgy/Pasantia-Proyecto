@@ -26,9 +26,9 @@ class crudcontroller extends Controller
     public function create()
     {
         $empleado= new Empleado;
-        $empleado->cedula= '23872064'; 
+        $empleado->cedula= '12548632'; 
         $empleado->nombre='Nairobys';      
-        $empleado->apellido='Salazar';
+        $empleado->apellido='Moreno';
         $empleado->telefono='04142563149';
         $empleado->email='diovilgy@gmail.com';
         $empleado->save();

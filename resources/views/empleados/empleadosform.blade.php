@@ -31,12 +31,12 @@
                             <input type="text" name="telefono" class="form-control col-md-9">
                         </div>      
 
-                        <div class="row form-group">
+                       <!--  <div class="row form-group">
                             <label for="" class="col-2">Email</label>
                             <input type="text" name="email" class="form-control col-md-9">
-                        </div>            
+                        </div>    -->         
                         
-                        <<!-- div class="row form-group">
+                        <!-- div class="row form-group">
                             <button type="submit" class="btn btn-success col-md-3 offset-2">Guardar</button>
 
                             <button type="button" class="btn btn-success col-md-3 offset-2">Cancelar</button>

@@ -42,10 +42,7 @@
                             <button type="button" class="btn btn-success col-md-3 offset-2">Cancelar</button>
                         </div>
 
-<!--                         <div class="row form-group">
-                            
-                        </div>
- -->
+
                     </div>
                 </form>
             </div>

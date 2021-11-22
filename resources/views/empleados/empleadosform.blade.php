@@ -36,11 +36,11 @@
                             <input type="text" name="email" class="form-control col-md-9">
                         </div>            
                         
-                        <div class="row form-group">
+                        <<!-- div class="row form-group">
                             <button type="submit" class="btn btn-success col-md-3 offset-2">Guardar</button>
 
                             <button type="button" class="btn btn-success col-md-3 offset-2">Cancelar</button>
-                        </div>
+                        </div> -->
 
 
                     </div>

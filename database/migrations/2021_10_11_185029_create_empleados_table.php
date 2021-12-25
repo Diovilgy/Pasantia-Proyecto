@@ -22,7 +22,7 @@ class CreateEmpleadosTable extends Migration
             $table->char('apellido',50);
             $table->char('telefono',20);
             $table->string('email',60)->unique();
-
+            
         });
     }
 

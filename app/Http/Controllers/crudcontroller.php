@@ -26,11 +26,11 @@ class crudcontroller extends Controller
     public function create()
     {
         $empleado= new Empleado;
-        $empleado->cedula= '12548632'; 
-        $empleado->nombre='Nairobys';      
-        $empleado->apellido='Moreno';
-        $empleado->telefono='04142563149';
-        $empleado->email='diovilgy@hotmail.com';
+        $empleado->cedula= '21536248'; 
+        $empleado->nombre='Maria';      
+        $empleado->apellido='Marrero';
+        $empleado->telefono='041412463259';
+        $empleado->email='clave@hotmail.com';
         $empleado->save();
         return 'datos guardados';
     }

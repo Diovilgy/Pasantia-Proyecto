@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/empleados', function () {
-    return view('/empleados.empleadosform');
-});
+/* Route::get('/empleados', function () {
+     return view('/empleados.empleadosform');
+}); */
+
+Route::get('/empleados', 'crudcontroller@create'); //Ruta que me devolvera la vista 
+Route::post('/guardar', 'crudcontroller@store')->name('store'); //Ruta para almacenar empleados
 
 Route::get('/layouts', function () {
     return view('/layouts.base');

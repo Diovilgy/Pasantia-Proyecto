@@ -6,8 +6,8 @@
         <div class="col-md-7 mt-5">
 
             <div class="card">
-                <form action="" method="post">
-                    
+                <form action="{{ route('store') }}" method="POST">
+                @csrf
                     <div class="card-header text-center">AGREGAR EMPLEADO</div>
 
                     <div class="card-body">

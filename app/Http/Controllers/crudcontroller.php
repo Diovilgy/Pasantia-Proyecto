@@ -15,7 +15,7 @@ class crudcontroller extends Controller
      */
     public function index()
     {
-     
+        
     }
 
     /**
@@ -25,14 +25,7 @@ class crudcontroller extends Controller
      */
     public function create()
     {
-        $empleado= new Empleado;
-        $empleado->cedula= '21536248'; 
-        $empleado->nombre='Maria';      
-        $empleado->apellido='Marrero';
-        $empleado->telefono='041412463259';
-        $empleado->email='clave@hotmail.com';
-        $empleado->save();
-        return 'datos guardados';
+        return view('empleados.empleadosform');
     }
 
     /**
@@ -43,7 +36,9 @@ class crudcontroller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $empleadodatos= request()->all();
+
+        return response()->json($empleadodatos);
     }
 
     /**

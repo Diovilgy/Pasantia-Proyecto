@@ -36,9 +36,21 @@ class crudcontroller extends Controller
      */
     public function store(Request $request)
     {
-        $empleadodatos= request()->all();
+        
+        $validarDatos= $this->validate($request, [ 
+            'cedula' => 'required|number|max:250',
+            'nombre' => 'required|string|max:250',
+            'apellido' => 'required|string|max:250',
+            'telefono' => 'required|number|max:10',
+            'email' => 'required|email|max:250'
 
-        return response()->json($empleadodatos);
+        ]);
+        
+        $empleadoDatos= request()->except('_token');
+
+        Empleado::insert($empleadoDatos);
+
+        return 'Empleado guardado';
     }
 
     /**

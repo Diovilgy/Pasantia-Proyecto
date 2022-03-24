@@ -16,7 +16,7 @@
                                 <label for="" class="col-form-label">Cedula</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="cedula" class="form-control">
+                                <input type="number" name="cedula" class="form-control" pattern="[0-9]+" require>
                             </div>  
                         </div>
 
@@ -25,7 +25,7 @@
                                 <label for="" class="col-form-label">Nombre</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="nombre" class="form-control">
+                                <input type="text" name="nombre" class="form-control" require>
                             </div>  
                         </div>
 
@@ -34,7 +34,7 @@
                                 <label for="" class="col-form-label">Apellido</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="apellido" class="form-control">
+                                <input type="text" name="apellido" class="form-control" require>
                             </div>  
                         </div>
 
@@ -43,7 +43,7 @@
                                 <label for="" class="col-form-label">Telefono</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="telefono" class="form-control">
+                                <input type="text" name="telefono" class="form-control" require>
                             </div>  
                         </div>
 
@@ -52,7 +52,8 @@
                                 <label for="" class="col-form-label">Email</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="email" class="form-control">
+                                <input type="email" name="email" class="form-control" 
+                                placeholder="nombre@ejemplo.com" require>
                             </div>  
                         </div>          
                         

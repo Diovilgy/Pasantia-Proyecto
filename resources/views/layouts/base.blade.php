@@ -14,7 +14,8 @@
     <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
 
  
-    <script type="text/javascript" src="{{ URL::asset('js/scripts.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/validacion.js') }}"></script>
+    
     <title>Document</title>
 
 </head>

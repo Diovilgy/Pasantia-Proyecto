@@ -35,7 +35,7 @@ class crudcontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { 
         
         $validarDatos= $this->validate($request, [ 
             'cedula' => 'required|number|max:250',

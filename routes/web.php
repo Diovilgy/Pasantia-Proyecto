@@ -26,5 +26,11 @@ Route::get('/layouts', function () {
     return view('/layouts.base');
 });
 
+Route::get('/prueba', function () {
+    return view('/empleados.prueba');
+});
+
+
+
 Route::resource('varios', 'crudcontroller');
 

@@ -38,11 +38,11 @@ class crudcontroller extends Controller
     { 
         
         $validarDatos= $this->validate($request, [ 
-            'cedula' => 'required|number|max:250',
+            'cedula' => 'required|number|max:8',
             'nombre' => 'required|string|max:250',
             'apellido' => 'required|string|max:250',
             'telefono' => 'required|number|max:10',
-            'email' => 'required|email|max:250'
+            'email' => 'required|string|max:250|email'
 
         ]);
         

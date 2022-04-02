@@ -130,9 +130,32 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'cedula' => [
+            'required' => 'La cedula es requerida',
+            'number' => 'La cedula debe contener solo numeros',
+            'max:8'=> 'La cedula debe contener ocho (8) numeros'
         ],
+        'nombre' => [
+            'required' => 'El nombre es requerido',
+            'strig' => 'El nombre debe ser de tipo texto',
+            'max:250'=> 'El nombre es demasiado largo'
+        ],
+        'apellido' => [
+            'required' => 'El apellido es requerido',
+            'strig' => 'El apellido debe ser de tipo texto',
+            'max:250'=> 'El apellido es demasiado largo'
+        ],
+        'telefono' => [
+            'required' => 'El apellido es requerido',
+            'number' => 'La cedula debe contener solo numeros',
+            'max:250'=> 'El telefono es demasiado largo'
+        ],
+        'email' => [
+            'required' => 'El email es requerido',
+            'strig' => 'El email debe ser de tipo texto',
+            'max:250'=> 'El email es demasiado largo'
+        ],
+
     ],
 
     /*

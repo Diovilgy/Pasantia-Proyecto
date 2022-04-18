@@ -28,7 +28,7 @@
                                 <label for="cedula" class="col-form-label">Cedula</label>
                             </div>
                             <div class="col-md-4">
-                                <input type="number" name="cedula" id="cedula" class="form-control" value="" require> 
+                                <input type="text" name="cedula" id="cedula" class="form-control" value="" require> 
                             </div> 
                         </div>
 

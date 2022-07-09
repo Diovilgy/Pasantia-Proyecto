@@ -11,26 +11,25 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Controllers\empleadosControllers;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-/* Route::get('/empleados', function () {
-     return view('/empleados.empleadosform');
-}); */
+Route::get('/list','empleadosControllers@list'); //Listado de empleados
+Route::get('/empleados', 'empleadosControllers@create'); //Formulario de empleados
+Route::post('/guardar', 'empleadosControllers@store')->name('store'); //Guardar empleados
 
-Route::get('/empleados', 'crudcontroller@create'); //Ruta que me devolvera la vista 
-Route::post('/guardar', 'crudcontroller@store')->name('store'); //Ruta para almacenar empleados
 
+/* 
 Route::get('/layouts', function () {
     return view('/layouts.base');
 });
 
 Route::get('/prueba', function () {
     return view('/empleados.prueba');
-});
+}); */
 
-
-
-Route::resource('varios', 'crudcontroller');
 

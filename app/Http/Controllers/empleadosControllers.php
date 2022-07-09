@@ -6,14 +6,22 @@ use Illuminate\Http\Request;
 
 use App\Empleado;
 
-class crudcontroller extends Controller
+class empleadosControllers extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function list()
+    {
+        $datos['empleados']= Empleado::paginate(15);
+
+        return view('empleados.list',$datos);
+    }
+    
+    
+     public function index()
     {
         
     }
@@ -37,11 +45,11 @@ class crudcontroller extends Controller
     public function store(Request $request)
     { 
         
-        $validarDatos= $this->validate($request, [ 
-            'cedula' => 'required|number|max:8',
+        $validator= $this->validate($request, [ 
+            'cedula' => 'required|string|max:8',
             'nombre' => 'required|string|max:250',
             'apellido' => 'required|string|max:250',
-            'telefono' => 'required|number|max:10',
+            'telefono' => 'required|string|max:10',
             'email' => 'required|string|max:250|email'
 
         ]);
@@ -50,7 +58,7 @@ class crudcontroller extends Controller
 
         Empleado::insert($empleadoDatos);
 
-        return 'Empleado guardado';
+        return back()->with('usuarioGuardado','Usuario Guardado');
     }
 
     /**

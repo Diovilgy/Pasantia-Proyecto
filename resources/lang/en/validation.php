@@ -153,7 +153,9 @@ return [
         'email' => [
             'required' => 'El email es requerido',
             'strig' => 'El email debe ser de tipo texto',
-            'max:250'=> 'El email es demasiado largo'
+            'max:250'=> 'El email es demasiado largo',
+            'email'=> 'Formato de email incorrecto',
+            'unique'=>'El email ya existe'
         ],
 
     ],

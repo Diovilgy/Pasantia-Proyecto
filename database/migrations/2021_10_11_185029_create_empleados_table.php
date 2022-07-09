@@ -15,13 +15,18 @@ class CreateEmpleadosTable extends Migration
     public function up()
     {
         Schema::create('empleados', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('idEmpleado');
             $table->timestamps();
-            $table->char('cedula',8)->unique();
-            $table->char('nombre',50);
-            $table->char('apellido',50);
-            $table->char('telefono',20);
+            $table->string('cedula',8)->unique();
+            $table->string('nombre',50);
+            $table->string('apellido',50);
+            $table->string('telefono',20);
             $table->string('email',60)->unique();
+
+            $table->foreign('idEmpleado')->references('idArea')->on('area');
+            $table->foreign('idEmpleado')->references('idOrden')->on('orden');
+            $table->foreign('idEmpleado')->references('idUsuario')->on('usuario');
+
             
         });
     }
